@@ -225,7 +225,7 @@ else:
             "Your blacklisted chats list does not contain valid integers.")
 
 
-DEV_USERS.add(1484735126)
+DEV_USERS.add(5495186125)
 
 
 if not SPAMWATCH_API:
@@ -301,7 +301,7 @@ tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
 
 
-if "@Aero_Management_Bot" not in PM_START_TEXT:
+if "@SweetieRobot" not in PM_START_TEXT:
     LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Thanks To @Aero_Management_Bot For Repo` In PM_START_TEXT To Fix This")
     sys.exit(1)
 else:
