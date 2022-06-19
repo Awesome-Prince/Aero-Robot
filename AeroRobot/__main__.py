@@ -209,7 +209,7 @@ def test(update: Update, context: CallbackContext):
     print(update.effective_message)
 
 
-@run_async
+
 def start(update: Update, context: CallbackContext):
     args = context.args
     uptime = get_readable_time((time.time() - StartTime))
@@ -715,7 +715,7 @@ def main():
                                      migrate_chats)
 
     # dispatcher.add_handler(test_handler)
-    dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(start_handler, run_async=True)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(help_callback_handler)
