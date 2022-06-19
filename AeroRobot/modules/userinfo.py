@@ -504,7 +504,7 @@ def stats(update, context):
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="github.com/Awesome-Prince/AeroRobot-2")
+                             url="github.com/AerodynamicV1Botz/Aero-Robot")
                      ] 
                 ]
             ),
