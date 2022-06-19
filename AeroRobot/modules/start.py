@@ -1,11 +1,11 @@
 import asyncio
 
 from telegram.ext import CommandHandler
-from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import Client
+from telegram import (InlineKeyboardButton, InlineKeyboardMarkup,)
 
 
-@Client.on_message(CommandHandler("start") & filters.private & ~filters.group & ~filters.edited)
+@Client.on_message(CommandHandler("start"))
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
     await message.reply_photo(
